@@ -1,4 +1,4 @@
-# hznotepad
+
 notepad期中实验
 
 一、内容简介
@@ -90,10 +90,6 @@ adapter
 private String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE ,NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE} ;
 
 private int[] viewIDs = { R.id.text1,R.id.text2 };
-```
-截图如下：
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519140223186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
 
 2.添加笔记查询功能
 1)NodeList.java中查询功能的实现关键代码
@@ -149,17 +145,7 @@ private void SearchView(){
     >
   ```
 
-结果截图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519140635975.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
-
-查找2
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519140715327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
-
-查找han
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519140801199.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
 
 3.背景美化：
 关键代码:
@@ -167,9 +153,7 @@ private void SearchView(){
 android:background="@drawable/i"
 android:background="@drawable/m"
 ```
-截图如下:
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519142701259.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
 
 4.字体大小更换
 1)NoteEditor中添加如下代码:
@@ -224,12 +208,6 @@ public boolean onOptionsItemSelected(MenuItem item) {
 </item>
 ```
 
-截图如下所示:
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519143037459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519143046983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
-
 
 5.字体颜色更换
 1)NoteEditor中添加如下代码:
@@ -283,11 +261,6 @@ public boolean onOptionsItemSelected(MenuItem item) {
 </item>
 ```
 
-截图如下所示:
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519143227437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519143235818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
 
 6.导出功能：
 1)在AndroidManifest.xml中加入权限，定义样式：
@@ -373,11 +346,6 @@ private final void outputNote() {
 
 }
 ```
-截图如下：
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519144244614.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519144254628.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
 
 
 7.排序功能
@@ -436,9 +404,6 @@ case R.id.menu_sort1:
         );
         setListAdapter(adapter);
 ```
-截图如下:
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190519144729850.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NhbW11cmFtYXQ=,size_16,color_FFFFFF,t_70)
 
 
 
